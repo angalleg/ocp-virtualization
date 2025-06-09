@@ -1,1 +1,13 @@
-# ocp-virtualization
+# OpenShift Virtualization
+
+# 2. Installing OpenShift Virtualization
+
+OpenShift Virtualization enables you to run and manage virtual machines (VMs) alongside containers in OpenShift. This ArgoCD application will configure the following resources:
+
+1. OCP-Virt operator
+2. Create the `HyperConverged` instance (HyperConverged Operator) is the core custom resource that deploys and manages all the components required by OpenShift Virtualization. 
+
+[source,bash]
+----
+oc apply -f app-ocp-virt.yaml
+----
